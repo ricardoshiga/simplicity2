@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>\|Serviços - Simplicity</title>
 
+
+    <!-- Importando o CSS do plugin Lightbox -->
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -39,14 +43,18 @@
                 voluptate!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, totam cupiditate modi voluptatibus minus
                 voluptas itaque harum?</p>
-            
-                <figure>
-                    <img src="imagens/desenvolvimento-web-mini.jpg" alt="">
-                    <img src="imagens/design-grafico-mini.jpg" alt="">
-                    <img src="imagens/marketing-digital-mini.jpg" alt="">
-                    <img src="imagens/consultoria-treinamento-mini.jpg" alt="">
-                </figure>
-           
+
+            <figure>
+                <a data-lightbox="galeria" data-title="Front-End" href="imagens/desenvolvimento-web.jpg"><img src="imagens/desenvolvimento-web-mini.jpg" alt=""></a>
+
+                <a data-lightbox="galeria" data-title="Edição de imagens" href="imagens/design-grafico.jpg"><img src="imagens/design-grafico-mini.jpg" alt=""></a>
+
+                <a data-lightbox="galeria" data-title="Venda bem!" href="imagens/marketing-digital.jpg"><img src="imagens/marketing-digital-mini.jpg" alt=""></a>
+
+                <a data-lightbox="galeria" data-title="Aprenda o que você precisar" href="imagens/consultoria-treinamento.jpg"><img src="imagens/consultoria-treinamento-mini.jpg"
+                        alt=""></a>
+            </figure>
+
         </article>
     </main>
 
@@ -56,7 +64,17 @@
 
 
     </footer>
+    <!-- Biblioteca jQuery (dependência)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+
+    <!-- JS do plugin Lightbox -->
+    <script src="lightbox/js/lightbox.min.js"></script>
+
     <script src="js/menu.js"></script>
+
+    <script src="js/galeria.js"></script>
+
 
 </body>
 
